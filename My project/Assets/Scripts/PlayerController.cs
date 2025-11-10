@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public InputAction MoveAction;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,6 @@ public class PlayerController : MonoBehaviour
         {
             horizontal = 1.0f;
         }
-
         Debug.Log(horizontal);
 
 
@@ -41,7 +40,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log(vertical);
 
 
-            Vector2 position = transform.position;
+        Vector2 position = transform.position;
         position.x = position.x + 0.1f * horizontal;
         position.y = position.y + 0.1f * vertical;
         transform.position = position;

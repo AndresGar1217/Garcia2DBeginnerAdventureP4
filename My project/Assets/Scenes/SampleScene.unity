@@ -311,23 +311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f253f6c1d0ed194fbedac99a071b3f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveAction:
-    m_Name: Move
-    m_Type: 1
-    m_ExpectedControlType: Button
-    m_Id: 32eefc47-fab0-4537-b670-ce3c490b84f2
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 15730404-ea8d-4972-95f1-476740b35298
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move
-      m_Flags: 0
-    m_Flags: 0
 --- !u!1 &1301897941
 GameObject:
   m_ObjectHideFlags: 0
