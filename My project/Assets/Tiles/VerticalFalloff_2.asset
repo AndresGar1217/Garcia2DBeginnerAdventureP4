@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: FloorBlueGrassToVerticalFalloff_4
+  m_Name: VerticalFalloff_2
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1229802598, guid: 800b1f8aa84b8f54bb032207e0254e2a, type: 3}
+  m_Sprite: {fileID: -1642627202, guid: 0be9c4312549cfa4f9a0fe5946274874, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
