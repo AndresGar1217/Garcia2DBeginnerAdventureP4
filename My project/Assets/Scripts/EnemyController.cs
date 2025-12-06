@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class EnemyController : MonoBehaviour
 {
     // Public variables
     public float speed;
     public bool vertical;
-    public float changeTime = 3.0f;
-
+    public float changeTime;
+    public ParticleSystem smokeEffect;
     // Private variables
     Rigidbody2D rigidbody2d;
     Animator animator;
@@ -39,9 +40,6 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-
-
-
     // FixedUpdate has the same call rate as the physics system
     void FixedUpdate()
     {
@@ -49,6 +47,7 @@ public class EnemyController : MonoBehaviour
         {
             return;
         }
+
         Vector2 position = rigidbody2d.position;
 
         if (vertical)
@@ -63,8 +62,6 @@ public class EnemyController : MonoBehaviour
             animator.SetFloat("Move X", direction);
             animator.SetFloat("Move Y", 0);
         }
-
-
         rigidbody2d.MovePosition(position);
     }
 
@@ -80,19 +77,13 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        Destroy(gameObject);
-    }
-
-
 
     public void Fix()
     {
         broken = false;
-        GetComponent<Rigidbody2D>().simulated = false;
+        rigidbody2d.simulated = false;
         animator.SetTrigger("Fixed");
+        smokeEffect.Stop();
     }
 
 }
-
