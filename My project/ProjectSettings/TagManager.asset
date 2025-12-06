@@ -13,10 +13,10 @@ TagManager:
   - UI
   - 
   - 
-  - player
-  - projectile
   - 
   - 
+  - 
+  - NPC
   - 
   - 
   - Character
@@ -35,7 +35,7 @@ TagManager:
   - 
   - 
   - 
-  - NPC
+  - Confiner
   - Camera
   m_SortingLayers:
   - name: Background
